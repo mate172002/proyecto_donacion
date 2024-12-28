@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Buscar.css';
 const Buscar = () => {
   return (
     <div>

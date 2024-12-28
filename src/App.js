@@ -5,46 +5,45 @@ import Donar from './components/Donar';
 import RecaudarFondos from './components/RecaudarFondos';
 import AcercaDe from './components/AcercaDe';
 import IniciarSesion from './components/IniciarSesion';
+import './App.css'; // Archivo CSS para el diseño
 
 const App = () => {
   return (
     <Router>
-      <header>
-        <div className="navbar">
-          <div className="logo">
-            <img src="logo.png" alt="Logo" />
-          </div>
-          <nav>
-            <ul>
-              <li>
-                <img src="busqueda.png" alt="Buscar" className="icon" />
-                <Link to="/buscar">Buscar</Link>
-              </li>
-              <li>
-                <img src="donar.png" alt="Donar" className="icon" />
-                <Link to="/donar">Donar</Link>
-              </li>
-              <li>
-                <img src="recaudar.png" alt="Recaudar fondos" className="icon" />
-                <Link to="/recaudar-fondos">Recaudar fondos</Link>
-              </li>
-              <li>
-                <img src="acerca.png" alt="Acerca de" className="icon" />
-                <Link to="/acerca-de">Acerca de</Link>
-              </li>
-              <li>
-                <img src="iniciar.png" alt="Iniciar sesión" className="icon" />
-                <Link to="/iniciar-sesion">Iniciar sesión</Link>
-              </li>
-            </ul>
-          </nav>
-          <button className="cta">
-            <Link to="/recaudar-fondos">Iniciar una recaudación</Link>
-          </button>
+      <header className="navbar">
+        <div className="logo">
+          <img src="logo.png" alt="Logo" className="logo-img" />
         </div>
+        <nav>
+          <ul className="nav-links">
+            <li>
+              <img src="busqueda.png" alt="Buscar" className="icon" />
+              <Link to="/buscar">Buscar</Link>
+            </li>
+            <li>
+              <img src="donar.png" alt="Donar" className="icon" />
+              <Link to="/donar">Donar</Link>
+            </li>
+            <li>
+              <img src="recaudar.png" alt="Recaudar fondos" className="icon" />
+              <Link to="/recaudar-fondos">Recaudar fondos</Link>
+            </li>
+            <li>
+              <img src="acerca.png" alt="Acerca de" className="icon" />
+              <Link to="/acerca-de">Acerca de</Link>
+            </li>
+            <li>
+              <img src="iniciar.png" alt="Iniciar sesión" className="icon" />
+              <Link to="/iniciar-sesion">Iniciar sesión</Link>
+            </li>
+          </ul>
+        </nav>
+        <button className="cta">
+          <Link to="/recaudar-fondos">Iniciar una recaudación</Link>
+        </button>
       </header>
 
-      <main>
+      <main className="main-content">
         <Routes>
           <Route path="/buscar" element={<Buscar />} />
           <Route path="/donar" element={<Donar />} />
@@ -54,7 +53,7 @@ const App = () => {
         </Routes>
       </main>
 
-      <footer>
+      <footer className="footer">
         <p>2024 Madeleine Jimenez, Franco Quesada y Jhonder Triana.</p>
       </footer>
     </Router>

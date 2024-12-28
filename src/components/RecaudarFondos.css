@@ -1,0 +1,106 @@
+/* Contenedor principal */
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f7fa, #e3f2fd); /* Fondo celeste muy claro */
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Formulario */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 500px;
+  width: 100%;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos y subtítulos */
+.titulo {
+  font-size: 2.5rem;
+  color: #1976d2; /* Azul delicado */
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Campos del formulario */
+.campo {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.campo:focus {
+  border-color: #90caf9; /* Celeste suave */
+  outline: none;
+  box-shadow: 0 0 8px rgba(144, 202, 249, 0.3);
+}
+
+/* Fechas */
+.fechas {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* Botones */
+.boton {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #64b5f6; /* Azul claro */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(100, 181, 246, 0.4);
+}
+
+.boton:hover {
+  background-color: #42a5f5; /* Azul un poco más intenso */
+  transform: scale(1.05);
+}
+
+.boton-regresar {
+  background-color: #ef5350; /* Rojo suave */
+}
+
+.boton-regresar:hover {
+  background-color: #e53935;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .formulario {
+    padding: 1.5rem;
+  }
+
+  .campo {
+    font-size: 0.9rem;
+  }
+
+  .titulo {
+    font-size: 2rem;
+  }
+}

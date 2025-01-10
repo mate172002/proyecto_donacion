@@ -7,6 +7,7 @@ import Donar from './components/Donar';
 import RecaudarFondos from './components/RecaudarFondos';
 import AcercaDe from './components/AcercaDe';
 import IniciarSesion from './components/IniciarSesion';
+import Registro from './components/Registro'; // Importa el componente Registro
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
           <Route path="/recaudar-fondos" element={<RecaudarFondos />} />
           <Route path="/acerca-de" element={<AcercaDe />} />
           <Route path="/iniciar-sesion" element={<IniciarSesion />} />
+          <Route path="/registro" element={<Registro />} /> {/* Nueva ruta para Registro */}
         </Routes>
       </main>
 

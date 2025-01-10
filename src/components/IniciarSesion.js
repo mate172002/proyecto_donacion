@@ -24,7 +24,7 @@ const IniciarSesion = () => {
         </button>
         <p className="iniciar-register-text">
           ¿No tienes cuenta?{' '}
-          <a href="#" className="iniciar-register-link">
+          <a href="/registro" className="iniciar-register-link">
             Regístrate
           </a>
         </p>
